@@ -2,7 +2,7 @@
 A lightweight Retrieval-Augmented Generation (RAG) system that
  answers questions from a tennis knowledge base using 
 semantic search and LLM-based generation.
-# Overview
+## Overview
 
 This project implements an end-to-end RAG pipeline to enable context-aware question answering over structured markdown documents.
 
@@ -14,7 +14,7 @@ LLM generation (Qwen)
 
 to build a simple but effective document-based QA system.
 
-# How It Works
+## How It Works
 Load a markdown document (tennis dataset)
 Split content using markdown headers
 Generate embeddings using all-MiniLM-L6-v2
@@ -23,7 +23,7 @@ Retrieve the most relevant chunk for a query
 Pass retrieved context to an LLM (Qwen)
 Generate a context-aware answer
 
-# Tech Stack
+## Tech Stack
 Python
 LangChain
 ChromaDB (Vector Database)
@@ -31,7 +31,7 @@ Sentence Transformers
 Hugging Face Transformers
 Qwen2.5-1.5B-Instruct
 
-# RAGTennisQA/
+## RAGTennisQA/
 
 │
 ├── app.py
@@ -46,7 +46,7 @@ Qwen2.5-1.5B-Instruct
     └── rag_pipeline_demo.ipynb
 	
 	
-# installatins
+## Installatins
 
 git clone https://github.com/abhishekgawali/RAGTennisQA.git
 cd RAGTennisQA
