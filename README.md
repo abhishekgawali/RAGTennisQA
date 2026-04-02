@@ -1,51 +1,54 @@
-# RAGTennisQA
-A lightweight Retrieval-Augmented Generation (RAG) system that
- answers questions from a tennis knowledge base using 
-semantic search and LLM-based generation.
-## Overview
+# 🎾 RAGTennisQA
 
-This project implements an end-to-end RAG pipeline to enable context-aware question answering over structured markdown documents.
+A lightweight Retrieval-Augmented Generation (RAG) system that answers questions from a tennis knowledge base using semantic search and LLM-based generation.
 
-It demonstrates how to combine:
+---
 
-vector search (ChromaDB)
-semantic embeddings (Sentence Transformers)
-LLM generation (Qwen)
+## 🚀 Overview
 
-to build a simple but effective document-based QA system.
+This project implements an end-to-end RAG pipeline to enable **context-aware question answering** over structured markdown documents.
 
-## How It Works
-Load a markdown document (tennis dataset)
-Split content using markdown headers
-Generate embeddings using all-MiniLM-L6-v2
-Store embeddings in ChromaDB
-Retrieve the most relevant chunk for a query
-Pass retrieved context to an LLM (Qwen)
-Generate a context-aware answer
+The entire pipeline is implemented in a Jupyter Notebook for easy experimentation and demonstration.
 
-## Tech Stack
-Python
-LangChain
-ChromaDB (Vector Database)
-Sentence Transformers
-Hugging Face Transformers
-Qwen2.5-1.5B-Instruct
+It combines:
 
-## RAGTennisQA/
+- Vector search (**ChromaDB**)
+- Semantic embeddings (**Sentence Transformers**)
+- LLM-based generation (**Qwen**)
+
+---
+
+## 🧠 How It Works
+
+1. Load a markdown document (tennis dataset)
+2. Split content using markdown headers
+3. Generate embeddings using `all-MiniLM-L6-v2`
+4. Store embeddings in **ChromaDB**
+5. Retrieve relevant context for a query
+6. Pass context to the LLM (Qwen)
+7. Generate a context-aware answer
+
+---
+
+## 🛠 Tech Stack
+
+- Python
+- LangChain
+- ChromaDB
+- Sentence Transformers
+- Hugging Face Transformers
+- Qwen2.5-1.5B-Instruct
+
+---
+
+## 📂 Project Structure
 
 ```text
 RAGTennisQA/
 ├── requirements.txt
 ├── README.md
+├── .gitignore
 ├── data/
 │   └── tennis_details.md
 └── notebooks/
-    └── rag_pipeline_demo.ipynb
-	```
-	
-## Installatins
-``` text
-git clone https://github.com/abhishekgawali/RAGTennisQA.git
-cd RAGTennisQA
-pip install -r requirements.txt
- ```
+    └── rag_pipeline_demo.ipynb   <-- main implementation
