@@ -45,9 +45,7 @@ It combines:
 
 ```text
 RAGTennisQA/
-├── requirements.txt
 ├── README.md
-├── .gitignore
 ├── data/
 │   └── tennis_details.md
 └── notebooks/
