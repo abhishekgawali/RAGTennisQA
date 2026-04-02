@@ -35,10 +35,8 @@ Qwen2.5-1.5B-Instruct
 
 ```text
 RAGTennisQA/
-├── app.py
 ├── requirements.txt
 ├── README.md
-├── .gitignore
 ├── data/
 │   └── tennis_details.md
 └── notebooks/
@@ -46,8 +44,8 @@ RAGTennisQA/
 	```
 	
 ## Installatins
-```text
+``` text
 git clone https://github.com/abhishekgawali/RAGTennisQA.git
 cd RAGTennisQA
 pip install -r requirements.txt
-```
+ ```
